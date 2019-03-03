@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		body {
+			
+			background-color: #008855;
+		}
+		
+		.footer	{
+			position: absolute;
+			bottom:0px;
+			margin: 0;
+			left: 0px;
+			padding:0;
+			width: 100%;
+			height:100px;
+			background-color: #008855;
+			perspective: 0px;
+		}
+		
+		#water {
+			position: absolute;
+			bottom: 50px;
+			background: radial-gradient(at top, #7FFFD4, #00BFFF);
+			left: 0px;
+			padding:0;
+			width: 100%;
+			height:700px;
+					
+		}
+		
+		.sit {
+			position: inherit;
+			bottom:30px;
+			left: 100px;
+			width:400px;
+		}
+		
+		.dedbody {
+			position: inherit;
+			bottom:53px;
+			left: 267px;
+			width:155px;
+		}
+		
+		#dh{position: inherit;
+			bottom:257px;
+			left: 270px;
+			
+			transform: rotateZ(0deg);
+			transform-origin: bottom center center;
+			transition: transform 1s;
+			
+			width:130px;
+			height: 100%;
+		}
+		
+		.dedhead {
+			position: inherit;
+			top:0px;
+			width:130px;
+			
+			
+			
+		}
+		
+		#dh:hover {
+			transform: rotateZ(10deg);
+		} 
+		
+		#da{position: inherit;
+			
+			bottom:168px;
+			left: 355px;
+			transform: rotateZ(0deg);
+			transform-origin: left center top;
+			transition: transform 0.3s;
+			
+			width:70px;
+			height: 100%;
+		} 
+		
+		#da:hover{
+			transform: rotateZ(10deg);
+		}
+		
+		.dedarm {
+			position: inherit;
+			
+			width:150px;
+		}
+		
+		.babkabody {
+			position: inherit;
+			bottom:52px;
+			left: 135px;
+			width:245px;
+		}
+		
+		#bh{position: inherit;
+			bottom:228px;
+			left: 178px;
+			transform: rotateZ(0deg);
+			transform-origin: bottom center center;
+			transition: transform 0.5s;
+			
+			width:70px;
+			height: 100%;
+		}
+		#bh:hover {
+			transform: rotateZ(-10deg);
+		} 
+		.babkahead {
+			position: inherit;
+			
+			width:70px;
+		}
+		
+		#ba{position: inherit;
+			bottom:150px;
+			left: 225px;
+			transform: rotateZ(0deg);
+			transform-origin: left center top;
+			transition: transform 1s;
+			
+			width:70px;
+			height: 100%;
+		}
+		
+		.babkaarm {
+			position: inherit;
+			
+			width:130px;
+		}
+		
+		.back {
+			position: inherit;
+			bottom:100px;
+			left: 55px;
+			width:380px;
+		}
+		
+		.stick {
+			position: inherit;
+			bottom:40px;
+			left: 435px;
+			width:160px;
+		}
+		
+		.duck{
+			
+			transition: top 2s, left 2s, transform 0.2s,width 1s;
+		}
+		
+		.d{
+			position: absolute;
+			top: 700px;
+			left: 800px;
+			width: 150px;
+			transform-origin: right center bottom;
+			
+			transition: top 2s, left 2s,transform 2s;
+		}
+		
+		#grass{
+			position: absolute;
+			top: 50px;
+			width: 100%;
+			height:150px;
+			background-color: #008855;
+		}
+		
+		#ship{
+		position: absolute;
+		border: 1 solid black;
+		left:-600px;
+		top: 100px;
+		width: 330px;
+		transition: left 20s;
+		}
+		
+		#bread{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: brown;
+			border-radius: 100%;
+			opacity:1;
+			bottom: 200px;
+			left: 465px;
+			transition: bottom 1s,left 2s, opacity 1s;
+		}
+		
+		#kook{
+			position: absolute;
+			top: 7px;
+			left: 10px;
+			width: 20px;
+			transition: transform 2s,opacity 3s;
+			opacity: 0;
+		}
+		
+	</style>
+	<script src="js/script.js" charset="utf-8" defer></script>
+</head>
+<body>
+	<div id="water">
+		<div id = "kook" >
+			<img src = "img/kook.svg">
+		</div>
+		<div class = "d">
+			<img class = "duck" src = "img/duck1.svg"></img>
+			
+		</div>	
+		<div class = "d">
+			<img class = "duck" src = "img/duck1.svg"></img>
+		</div>	
+		
+		
+		<img id = "ship" src = "img/ship.svg"></img>
+		
+		
+		<div class = "d">
+			<img class = "duck" src = "img/duck1.svg"></img>
+		</div>	
+		
+		<div class = "d">
+			<img class = "duck" src = "img/duck1.svg"></img>
+		</div>	
+		
+	</div>
+	<div class = "footer">
+		<img src="img/sit.svg" class = "sit">
+		<img src="img/dedbody.svg" class = "dedbody">
+		<img src="img/babkabody.svg" class = "babkabody">
+		<div id = "dh">
+			<img src="img/dedhead.svg" class = "dedhead">
+		</div>	
+		
+		<div id = "bh">
+			<img src="img/babkahead.svg" class = "babkahead">
+		</div>
+		
+		<div id = "ba">
+			<img src="img/babkaarm.svg" class = "babkaarm">
+		</div>	
+		<div id="bread"></div>
+		<div id = "da">	
+			<img src="img/dedarm.svg" class = "dedarm">
+		</div>
+		
+		<img src="img/back.svg" class = "back">
+		<img src="img/stick.svg" class = "stick">
+		
+	</div>
+	<audio src="Kalimba.mp3" autoplay="autoplay"></audio>
+
+</body>
+</html>
